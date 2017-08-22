@@ -1,0 +1,16 @@
+{{partials/header}}
+<form method="POST" action="/todo/add">
+  <h1>Todo List</h1>
+  <input type="text" name="Todo">
+  <!-- <br></br> -->
+  <input type="submit" value="Submit">
+</form>
+<div class="completeList">
+  <h2>Completed</h2>
+  <ul>
+    {{complete}}
+    <li></li>
+    {{complete}}
+  </ul>
+</div>
+{{partials/footer}}
